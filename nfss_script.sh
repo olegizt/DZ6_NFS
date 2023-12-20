@@ -1,4 +1,5 @@
-yum install nfs-utils wget
+yum install nfs-utils
+yum install -y wget
 systemctl enable firewalld --now
 firewall-cmd --add-service="nfs3" --add-service="rpc-bind" --add-service="mountd" --permanent 
 firewall-cmd --reload
